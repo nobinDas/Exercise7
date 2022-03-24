@@ -6,11 +6,11 @@ public class municipalTax implements Visitor{
 
     @Override
     public void visit(Type2 type2) {
-        System.out.println("Computing municipal taxes for a Type 1 building named: " + type2.getName());
+        System.out.println("Computing municipal taxes for a Type 2 building named: " + type2.getName());
     }
 
     @Override
     public void visit(Type3 type3) {
-        System.out.println("Computing municipal taxes for a Type 1 building named: " + type3.getName());
+        System.out.println("Computing municipal taxes for a Type 3 building named: " + type3.getName());
     }
 }

@@ -1,5 +1,6 @@
 public class Type3 implements Visitable{
     String name;
+
     public Type3(String msg) {
         name = msg;
     }
