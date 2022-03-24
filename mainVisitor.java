@@ -15,12 +15,16 @@ public class mainVisitor {
 
         toVisit = new ArrayList<Visitable>(Arrays.asList(b1, b2, b3, b4, b5, b6));
         //missing code for some of the visitor pattern goes here
+        municipalTax municipal = new municipalTax();
+        schoolTax school = new schoolTax();
 
 
         //Compute municipal and school taxes for each building to visit
         for (Visitable current : toVisit) {
             //code to pay municipal taxes for current building
-            //code to pay municipal taxes for current building
+            //code to pay school taxes for current building
+            current.accept(municipal);
+            current.accept(school);
         }
 
 

@@ -16,9 +16,9 @@ public class mainTemplatedTaxes {
         toVisit = new ArrayList<Visitable>(Arrays.asList(b1, b2, b3, b4, b5, b6));
 
         //Compute municipal and school taxes for each building to visit
-        for (Visitable current : toVisit) {
-            current.computeAllTaxes();
-        }
+//        for (Visitable current : toVisit) {
+//            current.computeAllTaxes();
+//        }
 
 
 
