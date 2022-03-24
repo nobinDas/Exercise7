@@ -14,11 +14,15 @@ public class mainTemplatedTaxes {
         Type3 b6 = new Type3("building T3-2");
 
         toVisit = new ArrayList<Visitable>(Arrays.asList(b1, b2, b3, b4, b5, b6));
+        municipalTax municipal = new municipalTax();
+        schoolTax school = new schoolTax();
 
         //Compute municipal and school taxes for each building to visit
-//        for (Visitable current : toVisit) {
-//            current.computeAllTaxes();
-//        }
+        for (Visitable current : toVisit) {
+            current.computeAllTaxes();
+            current.accept(municipal);
+            current.accept(school);
+        }
 
 
 
